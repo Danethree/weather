@@ -1,7 +1,10 @@
 import {useState} from 'react'
 import { API_KEY } from './API.env';
 
-
+/*Próximas tarefas:
+    -Adicionar tempo do dia seguinte
+    -Adicionar sensação térmica
+*/
 function App() {
   const [city,setCity] = useState("");
   const [weatherForecast,setWeatherForecast] = useState(null)
@@ -20,6 +23,7 @@ function App() {
 
     .then((data)=>{
       setWeatherForecast(data)
+      console.log(data)
     })
   }
   return (
@@ -49,10 +53,13 @@ function App() {
                   <img src={weatherForecast.current.condition.icon}/>
                 </div>
                 <div>
-                  <h3>Tempo: {weatherForecast.current.condition.text}</h3>
+                  <h2> {weatherForecast.current.condition.text}</h2>
                   <p className= "lead">
-                    Temperatura: {weatherForecast.current.temp_c} °C
+                    <b>Temperatura:</b> {weatherForecast.current.temp_c} °C
                   </p>
+                  <p className= "lead"> <b>Sensação Térmica: </b> {weatherForecast.current.feelslike_c} °C</p>
+                  <p className= "lead"><b>Humidade:</b> {weatherForecast.current.humidity} % </p>
+                
                 </div>
                 </div>
               </div>
