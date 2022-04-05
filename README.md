@@ -9,15 +9,15 @@ Ao digitar a cidade e clicar em "Pesquisar" a aplicação chama a API WeatherAPI
 
 # Instruções de execução
 
+
 * Clone o projeto com o comando:
 
-     ```bash
- git clone https://github.com/Danethree/weather.git
- ```
- 
-* Dentro da pasta do projeto, execute o comando:
+~~~shell
+git clone https://github.com/Danethree/weather.git
+~~~
 
-    ```bash
+* Após isso, dentro da pasta do projeto, execute no terminal o comando:
+
+~~~shell
 npm run dev
- ```
-
+~~~
