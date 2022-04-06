@@ -21,3 +21,11 @@ git clone https://github.com/Danethree/weather.git
 ~~~shell
 npm run dev
 ~~~
+
+* Ao acessar a porta onde o projeto foi executado, deverá exibir a seguinte página:
+
+<img src = "src/images/page0.png"></img>
+
+* Agora é só pesquisar por uma cidade e ver os resultados:
+
+<img src = "src/images/page.png"></img>
