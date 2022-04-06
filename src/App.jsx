@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { API_KEY } from './API.env';
+import { API_KEY } from './API/API.env'
 
 /*Próximas tarefas:
     -Adicionar tempo do dia seguinte
@@ -31,7 +31,7 @@ function App() {
       <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-7 ">
           <a className="navbar-brand text-white" href = "#top">Previsão do tempo</a>
       </nav>
-      <main className="container">
+      <main className="container bg-light ">
           <div className="jumbotron mb-7">
             <h1>Verifique agora a previsão do tempo da sua cidade</h1>
             <p className="lead">Digite o nome da sua cidade no campo abaixo e em seguida clique em pesquisar</p> 
@@ -70,8 +70,7 @@ function App() {
           </div>
 
       </main>
-
-   
+ 
     </div>
   )
 }
